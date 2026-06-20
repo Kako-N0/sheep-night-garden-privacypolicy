@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background-color: #061a3b;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Yu Gothic UI", sans-serif;
+  color: #fff8e8;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(3, 12, 31, 0.28) 0%,
+      rgba(3, 12, 31, 0.56) 42%,
+      rgba(3, 12, 31, 0.88) 100%
+    ),
+    url("./background_image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 56px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.support-card {
+  width: min(760px, 100%);
+  margin-top: 42vh;
+  padding: 34px 30px;
+  border-radius: 28px;
+  background: rgba(8, 18, 40, 0.76);
+  border: 1px solid rgba(255, 248, 232, 0.22);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: rgba(255, 248, 232, 0.72);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: clamp(28px, 5vw, 42px);
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.lead {
+  margin: 0 0 30px;
+  color: rgba(255, 248, 232, 0.86);
+  text-align: left;
+}
+
+section {
+  margin-top: 28px;
+}
+
+h2 {
+  margin: 0 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 248, 232, 0.18);
+  font-size: 20px;
+}
+
+p {
+  margin: 0;
+  line-height: 1.9;
+  font-size: 15.5px;
+}
+
+a {
+  color: #ffe8ad;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.date {
+  margin-top: 32px;
+  color: rgba(255, 248, 232, 0.68);
+  font-size: 14px;
+  text-align: right;
+}
+
+.sp-only {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  body {
+    background-size: auto 100vh;
+    background-position: center top;
+    background-attachment: scroll;
+  }
+
+  .page {
+    padding: 32px 16px;
+  }
+
+  .support-card {
+    margin-top: 56vh;
+    padding: 26px 20px;
+    border-radius: 24px;
+  }
+
+  .sp-only {
+    display: inline;
+  }
+
+  p {
+    font-size: 14.5px;
+  }
+}
