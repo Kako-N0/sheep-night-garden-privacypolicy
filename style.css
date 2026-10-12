@@ -13,12 +13,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Yu Gothic UI", sans-serif;
   color: #fff8e8;
   background:
-    linear-gradient(
-      180deg,
-      rgba(3, 12, 31, 0.28) 0%,
-      rgba(3, 12, 31, 0.56) 42%,
-      rgba(3, 12, 31, 0.88) 100%
-    ),
     url("./background_image.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,14 +31,14 @@ body {
 
 .support-card {
   width: min(760px, 100%);
-  margin-top: 42vh;
+  margin-top: 10vh;
   padding: 34px 30px;
   border-radius: 28px;
-  background: rgba(8, 18, 40, 0.76);
-  border: 1px solid rgba(255, 248, 232, 0.22);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(8, 24, 52, 0.55);
+  border: 1px solid rgba(255, 248, 232, 0.25);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .eyebrow {
@@ -115,7 +109,7 @@ a {
   }
 
   .support-card {
-    margin-top: 56vh;
+    margin-top: 10vh;
     padding: 26px 20px;
     border-radius: 24px;
   }
