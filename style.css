@@ -12,8 +12,7 @@ body {
   min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Yu Gothic UI", sans-serif;
   color: #fff8e8;
-  background:
-    url("./background_image.png");
+  background: url("./background_image.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -34,11 +33,11 @@ body {
   margin-top: 10vh;
   padding: 34px 30px;
   border-radius: 28px;
-  background: rgba(8, 24, 52, 0.55);
-  border: 1px solid rgba(255, 248, 232, 0.25);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: rgba(6, 20, 47, 0.64);
+  border: 1px solid rgba(255, 248, 232, 0.22);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .eyebrow {
@@ -99,9 +98,9 @@ a {
 
 @media (max-width: 640px) {
   body {
-    background-size: auto 100vh;
-    background-position: center top;
-    background-attachment: scroll;
+    background-size: auto 100%;
+    background-position: 79% center;
+    background-attachment: fixed;
   }
 
   .page {
@@ -109,16 +108,26 @@ a {
   }
 
   .support-card {
-    margin-top: 10vh;
-    padding: 26px 20px;
+    margin-top: 48px;
+    padding: 25px 20px 30px;
     border-radius: 24px;
+    background: rgba(6, 20, 47, 0.68);
   }
 
   .sp-only {
     display: inline;
   }
 
-  p {
-    font-size: 14.5px;
+  h1 {
+    font-size: clamp(24px, 6.7vw, 30px);
+    line-height: 1.35;
   }
+
+  h2 { font-size: 18px; }
+  h3 { font-size: 14px; margin: 20px 0 10px; }
+  .lead { font-size: 13px; line-height: 1.8; }
+  p { font-size: 13px; line-height: 1.85; }
+  li { font-size: 12.5px; line-height: 1.8; }
+  ul { padding-left: 22px; margin-bottom: 16px; }
+  section { margin-top: 24px; }
 }
